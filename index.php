@@ -462,7 +462,7 @@ include_once("connection.php");
             }
         }
     </script>
-    <?php // list category vinyl audio cassette
+    <?php 
     include_once("connection.php");
 	function Category_List($conn )
 	{

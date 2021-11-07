@@ -7,10 +7,11 @@
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
                             <span>All toy brands</span>
-                            
-                            
                         </div>
-                        
+                        <ul>
+                            <li><a href="#">DC Toy</a></li>
+                            <li><a href="#">Marvel Toy</a></li>
+                        </ul>
                         <ul>
                         <li ><a  href="?page=pm">All</a></li>
 

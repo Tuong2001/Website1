@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Vinyl Shop</h2>
+                        <h2>ATN Toy Store</h2>
                         <div class="breadcrumb__option">
                             <a href="?page=content">Home</a>
                             <span>Shop</span>
