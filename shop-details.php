@@ -26,6 +26,8 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                             <span>All toy brands</span>
                         </div>
                         <ul>
+                        <?php Department($conn); ?>
+                        <ul>
                             <li><a href="#">DC Toy</a></li>
                             <li><a href="#">Marvel Toy</a></li>
                             
