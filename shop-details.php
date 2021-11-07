@@ -23,7 +23,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
+                            <span>All toy brands</span>
                         </div>
                         <ul>
                             <li><a href="#">Vinyl</a></li>
