@@ -385,7 +385,7 @@ include_once("connection.php");
                         </div>
                         <ul>
                             <li>Address: 170 Road 2/9 Long Dien Dong, Dong Hai, Bac Lieu, Vietnam</li>
-                            <li>Phone: +84 90 785 3006</li>
+                            <li>Phone: +84 15 151 0041</li>
                             <li>Email: tuonggcc19257@fpt.edu.vn</li>
                         </ul>
                     </div>
