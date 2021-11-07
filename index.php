@@ -116,8 +116,8 @@ include_once("connection.php");
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> sieugcc19186@fpt.edu.vn</li>
-                <li>Free Shipping for all Order of $99</li>
+                <li><i class="fa fa-envelope"></i> tuongdvgcc19257@fpt.edu.vn</li>
+                <li>Free Shipping on All Orders Under $100</li>
             </ul>
         </div>
         <div class="col-lg-3">
@@ -144,7 +144,7 @@ include_once("connection.php");
                         <div class="header__top__left">
                             <ul>
                                 <li><i class="fa fa-envelope"></i> sieungcc19186@fpt.edu.vn</li>
-                                <li>Free Shipping for all Order of $99</li>
+                                <li>Free Shipping on All Orders Under $100</li>
                             </ul>
                         </div>
                     </div>
