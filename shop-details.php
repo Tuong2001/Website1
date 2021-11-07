@@ -25,12 +25,10 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                             <i class="fa fa-bars"></i>
                             <span>All toy brands</span>
                         </div>
-                        </div>
                         <ul>
-                        <?php Department($conn); ?>
+                            <?php Department($conn); ?>
                             
                         </ul>
-                    </div>
                     </div>
                 </div>
                 <div class="col-lg-9">
