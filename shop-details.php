@@ -160,12 +160,12 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6><?php echo $row["detaildesc"]; ?></h6>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p></p><break>
+                                    <p></p><break>
+                                    <p></p><break>
+                                    <p></p><break>
+                                    <p></p><break>
+                                    
                                         
                                 </div>
                             </div>
