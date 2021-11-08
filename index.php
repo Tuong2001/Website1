@@ -241,6 +241,8 @@ include_once("connection.php");
                                 
                             <?php } else { 
                             ?>
+                           
+                            <li><a href="?page=contact">Contact</a></li>
                             <li><a href="?page=content">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     
@@ -249,8 +251,6 @@ include_once("connection.php");
                                     
                                 </ul>
                             </li>
-                           
-                            <li><a href="?page=contact">Contact</a></li>
                             <?php 
                                 } 
                              ?>
