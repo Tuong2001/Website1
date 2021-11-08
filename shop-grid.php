@@ -171,7 +171,7 @@
                                     <div class="latest-prdouct__slider__item">
                                         <a href="#" class="latest-product__item">
                                             <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/martianmanhuntertoy.jpg" alt="img/latest-product/martianmanhuntertoy.jpg">
+                                                <img src="img/latest-product/martianmanhuntertoy.jpg" alt="">
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6></h6>
@@ -270,7 +270,7 @@
                                         <div class="product__discount__item__text">
                                             <span> </span>
                                             <h5><a href="?page=shop-details&&id=<?php echo  $row['product_id'] ?>"><?php echo $row["product_name"] ?></a></h5>
-                                            <div class="product__item__price"><?php echo $row["price"]  ?>đ </div>
+                                            <div class="product__item__price"><?php echo $row["price"]  ?>$ </div>
                                         </div>
                                     </div>
                                 </div>
