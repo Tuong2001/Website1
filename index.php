@@ -104,7 +104,8 @@ include_once("connection.php");
                     </ul>
                 </li>
                 
-                
+            
+            </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="header__top__right__social">
