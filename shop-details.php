@@ -92,7 +92,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                             <img data-imgbigurl="img/product/details/apocalypsetoy.jpg"
                                 src="img/product/details/beasttoy.jpg" alt="">
                             <img data-imgbigurl="img/product/details/cycloptoy.jpg"
-                                src="img/product/deadpooltoy.jpg" alt="">
+                                src="img/product/deadpooltoy.jpeg" alt="">
                             <img data-imgbigurl="img/product/details/magnetotoy.jpg"
                                 src="img/product/details/quicksilveltoy.jpg" alt="">
                             <img data-imgbigurl="img/product/details/stormtoy.jpg"
