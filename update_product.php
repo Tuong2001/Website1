@@ -107,73 +107,78 @@
 	<h2>Updating Product</h2>
 
 	 	<form id="frmProduct" name="frmProduct" method="post" enctype="multipart/form-data" action="" class="form-horizontal" role="form">
+         
+         <form id="frmProduct" name="frmProduct" method="post" enctype="multipart/form-data" action="" class="form-horizontal" role="form">
 				<div class="form-group">
 					<label for="txtTen" class="col-sm-2 control-label">Product ID(*):  </label>
 							<div class="col-sm-10">
-								  <input type="text" name="txtID" id="txtID" class="form-control" 
-								  placeholder="Product ID" readonly value='<?php echo $id?>'/>
+							      <input type="text" name="txtID" id="txtID" class="form-control" placeholder="Product ID" value="<?php if(isset($id)) echo $id?>"/>
 							</div>
-				</div> 
+                
 				<div class="form-group"> 
 					<label for="txtTen" class="col-sm-2 control-label">Product Name(*):  </label>
 							<div class="col-sm-10">
 								  <input type="text" name="txtName" id="txtName" class="form-control" 
-								  placeholder="Product Name" value='<?php echo $row["product_name"]?>'/>
+								  placeholder="Product Name" value=''/>
 							</div>
                 </div>   
-                <div class="form-group">   
-                    <label for="" class="col-sm-5 control-label">Product category(*):  </label>
-							<div class="col-sm-10">
-								<?php bind_Category_List($conn, $category); ?>
-							      
-							</div>
-                </div>  
+                
                           
                 <div class="form-group">  
-                    <label for="lblPrice" class="col-sm-12 control-label">Price(*):  </label>
+                    <label for="lblGia" class="col-sm-2 control-label">Price(*):  </label>
 							<div class="col-sm-10">
-							      <input type="text" name="txtPrice" id="txtPrice" class="form-control" placeholder="Price" value="<?php echo $price?>"/>
+							      <input type="text" name="txtPrice" id="txtPrice" class="form-control" placeholder="Price" value="<?php if(isset($price)) echo $price?>"/>
 							</div>
                  </div>   
+
+                 <div class="form-group">   
+                    <label for="" class="col-sm-2 control-label">Product category(*):  </label>
+							<div class="col-sm-10">
+                            
+							      <?php bind_Category_List($conn); ?>
+							</div>
+                </div>  
                             
                 <div class="form-group">   
-                    <label for="lblShort" class="col-sm-5 control-label">Short description(*):  </label>
+                    <label for="lblShort" class="col-sm-12 control-label">Short description(*):  </label>
 							<div class="col-sm-10">
-							      <input type="text" name="txtShort" id="txtShort" class="form-control" placeholder="Short description" value="<?php echo $short?>"/>
+							      <input type="text" name="txtShort" id="txtShort" class="form-control" placeholder="Short description" value="<?php if(isset($short)) echo $short?>"/>
 							</div>
                 </div>
                             
                 <div class="form-group">   
-                    <label for="lblDetail" class="col-sm-5 control-label">Detail Description(*):  </label>
+                    <label for="lblDetail" class="col-sm-2 control-label">Detail Description(*):  </label>
 							<div class="col-sm-10">
-							      <textarea type="text" name="txtDetail" id="txtDetail" class="form-control" style="height: 150px" row="4" value="<?php echo $detail?>"></textarea>
+							      <textarea type="text" name="txtDetail" id="txtDetail" class="form-control" style="height: 150px" row="4" value=""></textarea>
 							</div>
                 </div>
                             
             	<div class="form-group">  
-                    <label for="lblSoLuong" class="col-sm-2 control-label">Quantity(*):  </label>
+                    <label for="lblQty" class="col-sm-2 control-label">Quantity(*):  </label>
 							<div class="col-sm-10">
-							      <input type="number" name="txtQty" id="txtQty" class="form-control" placeholder="Quantity" value="<?php echo $qty ?>"/>
+							      <input type="number" name="txtQty" id="txtQty" class="form-control" placeholder="Quantity" value="<?php if(isset($qty)) echo $qty?>"/>
 							</div>
                 </div>
  
 				<div class="form-group">  
-	                <label for="sphinhanh" class="col-sm-2 control-label">Image(*):  </label>
+	                <label for="lblImage" class="col-sm-2 control-label">Image(*):  </label>
 							<div class="col-sm-10">
-							<img src='img/<?php echo $pic; ?>' border='0' width="50" height="50"  />
+							
 							      <input type="file" name="txtImage" id="txtImage" class="form-control" value=""/>
 							</div>
                 </div>
                         
 				<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
-						      <input type="submit"  class="site-btn" name="btnUpdate" id="btnUpdate" value="Update" />
+						      <input type="submit"  class="site-btn" name="btnAdd" id="btnAdd" value="Add"/>
                               <input type="button" class="site-btn" name="btnIgnore"  id="btnIgnore" value="Ignore" onclick="window.location='?page=pm'" />
                               	
 						</div>
 				</div>
 			</form>
+			</div>
 </div>
+
 <?php
 	if(isset($_POST['btnUpdate']))
 	{
