@@ -98,7 +98,7 @@ include_once("connection.php");
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
                         
-                        <li><a href="?page=shopping-cart">Shoping Cart</a></li>
+                        <li><a href="?page=shopping-cart">Shopping Cart</a></li>
                         <li><a href="?page=checkout">Check Out</a></li>
                         
                     </ul>
@@ -233,7 +233,7 @@ include_once("connection.php");
                                     <li><a href="?page=content">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     
-                                    <li><a href="?page=shopping-cart">Shoping Cart</a></li>
+                                    <li><a href="?page=shopping-cart">Shopping Cart</a></li>
                                     <li><a href="?page=checkout">Check Out</a></li>
                                     
                                 </ul>
@@ -261,7 +261,7 @@ include_once("connection.php");
                                  
                                 
                                  <li><a href="?page=contact">Contact</a></li>
-                                 <li><a href="?page=shopping-cart">Shoping Cart</a></li>
+                                 <li><a href="?page=shopping-cart">Shopping Cart</a></li>
                                  
                              </ul> 
                              

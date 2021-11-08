@@ -88,7 +88,7 @@
     </section>
     <!-- Breadcrumb Section End -->
 
-    <!-- Shoping Cart Section Begin -->
+    <!-- Shopping Cart Section Begin -->
    
     <section class="shoping-cart spad">
         <div class="container">
@@ -207,7 +207,7 @@
         </div>
     </section>
     
-    <!-- Shoping Cart Section End -->
+    <!-- Shopping Cart Section End -->
 
    
     

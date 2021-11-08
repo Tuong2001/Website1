@@ -186,7 +186,7 @@
             
         </div>
     </section>
-    <!-- Shoping Cart Section End -->
+    <!-- Shopping Cart Section End -->
     
 	
 	
