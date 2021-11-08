@@ -167,14 +167,15 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                             <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6>Products Infomation</h6>
-                                    <p>Let It Be is the Beatles' last studio album, released on May 8, 1970 by Apple Records. This is also the only album that George Martin is not a producer but instead is Phil Spector. Along with the Yellow Submarine, this is a rare album by The Beatles that Rolling Stone magazine rated negative on quality. The album includes a number of popular songs, such as "Let It Be", "Get Back", "Across the Universe" and "The Long and Winding Road".</p>
+                                    <p>About this item: Create your own Marvel adventures with the world's greatest collection of Super-Heroes. Choose from figures, vehicles, and role-play toys for heroes of all ages each sold separately. Marvel toys feature iconic characters like Spider-Man, the Avengers, the X-Men, and other favorites. Re-create the excitement of Marvel's hit TV shows and blockbuster movies. Build the ultimate collection of figures featuring Marvel's legendary characters.
+</p>
                                     
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-3" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6>Products Infomation</h6>
-                                    <p>Let It Be is the Beatles' last studio album, released on May 8, 1970 by Apple Records. This is also the only album that George Martin is not a producer but instead is Phil Spector. Along with the Yellow Submarine, this is a rare album by The Beatles that Rolling Stone magazine rated negative on quality. The album includes a number of popular songs, such as "Let It Be", "Get Back", "Across the Universe" and "The Long and Winding Road".</p>
+                                    <p>About this item: Create your own DC adventures with the world's greatest collection of Super-Heroes. Choose from figures, vehicles, and role-play toys for heroes of all ages each sold separately. DC toys feature iconic characters like Batman, Justice League, the suicide squad, and other favorites. Re-create the excitement of DC's hit TV shows and blockbuster movies. Build the ultimate collection of figures featuring DC's legendary characters</p>
                                 </div>
                             </div>
                         </div>
