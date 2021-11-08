@@ -122,7 +122,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                                 </div>
                             </div>
                             <button type="submit" name="btnCart" class="primary-btn">ADD TO CARD</button>
-                            <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                            <a href="?page=shoping-cart" class="heart-icon"><span class="icon_heart_alt"></span></a>
                         </form>
                         <ul>
                             <li><b>Try on</b> <a href="https://vi.chiasenhac.vn/nghe-album/abbey-road-xssw0sbwq9n4q9.html" target="_blank">CSN</a></li>
