@@ -52,7 +52,7 @@
                         <h2>Adding</h2>
                         <div class="breadcrumb__option">
                             <a href="?page=content">Home</a>
-                            <a href="?page=content">Recorded</a>
+                            <a href="?page=content">Popular Toys</a>
                             <span>Add New</span>
                         </div>
                     </div>
