@@ -8,8 +8,7 @@
                             <span>All toy brands</span>
                         </div>
                         <ul>
-                            <li><a href="#">DC Toy</a></li>
-                            <li><a href="#">Marvel Toy</a></li>
+                            <?php Department($conn); ?>
                             
                         </ul>
                     </div>

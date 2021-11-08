@@ -7,8 +7,9 @@
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
                             <span>All toy brands</span>
-                            
-                            
+                        <ul>
+                            <?php Department($conn); ?>  
+                        </ul>
                         </div>
                         
                         <ul>
