@@ -95,9 +95,6 @@ include_once("connection.php");
             <ul>
                 <li class="active"><a href="?page=content">Home</a></li>
                 <li><a href="?page=shop-grid">Shop</a></li>
-                <?php  if(isset($_SESSION['us']) && $_SESSION['us'] == 0)
-
-?>
                 <li><a href="?page=content">Pages</a>
                     <ul class="header__menu__dropdown">
                         
@@ -107,8 +104,7 @@ include_once("connection.php");
                     </ul>
                 </li>
                 
-                <li><a href="?page=contact">Contact</a></li>
-            </ul>
+                
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="header__top__right__social">
