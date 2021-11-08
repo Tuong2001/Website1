@@ -219,6 +219,24 @@ include_once("connection.php");
                     <?php if(isset($_SESSION['us']) && $_SESSION['us'] != ""){
                         ?> 
                     <nav class="header__menu">
+                    <ul>
+                            <li class="active"><a href="?page=content">Home</a></li>
+                            <li><a href="?page=shop-grid">Shop</a></li>
+                            
+                            <?php  if(isset($_SESSION['cus']) && $_SESSION['cus'] == 0){ 
+
+                            ?>  <li><a id ="CMM"href="?page=pm">Product Management </a>
+                                    <ul class="header__menu__dropdown">
+                                    <li><a href="?page=cat">Category Management</a></li>
+                                    </ul>
+                                    <li><a href="?page=content">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    
+                                    <li><a href="?page=shopping-cart">Shopping Cart</a></li>
+                                    <li><a href="?page=checkout">Check Out</a></li>
+                                    
+                                </ul>
+                            </li>
                     
                         <ul>
                             <li class="active"><a href="?page=content">Home</a></li>
