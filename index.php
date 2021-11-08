@@ -256,18 +256,12 @@ include_once("connection.php");
                              <nav class="header__menu">
                     
                              <ul>
-                             <li class="active"><a href="?page=content">Home</a></li>
-                <li><a href="?page=shop-grid">Shop</a></li>
-                <li><a href="?page=content">Pages</a>
-                    <ul class="header__menu__dropdown">
-                        
-                        <li><a href="?page=shopping-cart">Shopping Cart</a></li>
-                        <li><a href="?page=checkout">Check Out</a></li>
-                        
-                    </ul>
-                </li>
-                
-                <li><a href="?page=contact">Contact</a></li>
+                                 <li class="active"><a href="?page=content">Home</a></li>
+                                 <li><a href="?page=shop-grid">Shop</a></li>
+                                 
+                                
+                                 <li><a href="?page=contact">Contact</a></li>
+                                 <li><a href="?page=shopping-cart">Shopping Cart</a></li>
                                  
                              </ul> 
                              
