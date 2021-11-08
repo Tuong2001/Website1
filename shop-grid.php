@@ -242,7 +242,7 @@
                              if(isset($_GET['id'])){
                                 $id=$_GET['id'];
                                 $result = pg_query($conn,"SELECT product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name 
-                                from product, category where product.Cat_ID = category.cat_id and '$id'=category.cat_id ");
+                                from product, category where product.cat_id = category.cat_id and '$id'=category.cat_id ");
                                 
         
                             }
@@ -317,7 +317,7 @@
                         else{
 
                             $result = pg_query($conn,"SELECT product_id, product_name, price, pro_qty, pro_image, cat_name  from product a, category b  
-                            where a.Cat_ID = b.Cat_ID order by cat_name desc");
+                            where a.cat_id = b.cat_id order by cat_name desc");
                         }
                         
                     while($row=pg_fetch_array($result, NULL, PGSQL_ASSOC)) { 
@@ -327,7 +327,7 @@
 
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/<?php echo $row['Pro_image'] ?>">
+                                <div class="product__item__pic set-bg" data-setbg="img/<?php echo $row['pro_image'] ?>">
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
