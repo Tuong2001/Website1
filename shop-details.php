@@ -68,7 +68,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                         <h2>Detail Product</h2>
                         <div class="breadcrumb__option">
                             <a href="?page=content">Home</a>
-                            <a href="?page=content">Recorded</a>
+                            <a href="?page=content">Popular Toys</a>
                             <span>Detail Product</span>
                         </div>
                     </div>
@@ -86,23 +86,23 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
                             <img class="product__details__pic__item--large"
-                                src="img/<?php echo $row["Pro_image"]; ?>" alt="">
+                                src="img/<?php echo $row["pro_image"]; ?>" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="img/product/details/product-details-2.jpg"
-                                src="img/product/details/the_abbey_road.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-3.jpg"
-                                src="img/product/details/mmt.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-5.jpg"
-                                src="img/product/details/queen_gr.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-4.jpg"
-                                src="img/product/details/queen_gr2.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/apocalypsetoy.jpg"
+                                src="img/product/details/beasttoy.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/cycloptoy.jpg"
+                                src="img/product/deadpooltoy.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/magnetotoy.jpg"
+                                src="img/product/details/quicksilveltoy.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/stormtoy.jpg"
+                                src="img/product/details/wolverinetoy.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="product__details__text">
-                        <h3><?php echo $row["Product_Name"]; ?></h3>
+                        <h3><?php echo $row["product_name"]; ?></h3>
                         <div class="product__details__rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -112,7 +112,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                             <span>(18 reviews)</span>
                         </div>
                         <div class="product__details__price">$<?php echo $row["price"]; ?></div>
-                        <p><?php echo $row["SmallDesc"]; ?></p>
+                        <p><?php echo $row["smalldesc"]; ?></p>
                         <form method="POST">
                             <div class="product__details__quantity">
                                 <div class="quantity">
@@ -159,7 +159,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div class="product__details__tab__desc">
-                                    <h6><?php echo $row["DetailDesc"]; ?></h6>
+                                    <h6><?php echo $row["detaildesc"]; ?></h6>
                                     <p></p>
                                         
                                 </div>
@@ -266,9 +266,9 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
         $qty = $_POST['txtqty'];
     if(!isset($_SESSION['cart'][$id]))
     {
-        $_SESSION['cart'][$id]['img'] = $row['Pro_image'];
-        $_SESSION['cart'][$id]['name'] = $row['Product_Name'];
-        $_SESSION['cart'][$id]['price'] = $row['Price'];
+        $_SESSION['cart'][$id]['img'] = $row['pro_image'];
+        $_SESSION['cart'][$id]['name'] = $row['product_name'];
+        $_SESSION['cart'][$id]['price'] = $row['price'];
         $_SESSION['cart'][$id]['qty'] = $qty;
         echo "<script> alert(' Add to cart successful ');location.href='?page=content';</script>";
         }
