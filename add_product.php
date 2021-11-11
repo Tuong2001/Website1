@@ -187,13 +187,6 @@
 							      <input type="text" name="txtShort" id="txtShort" class="form-control" placeholder="Short description" value="<?php if(isset($short)) echo $short?>"/>
 							</div>
                 </div>
-                            
-                <div class="form-group">   
-                    <label for="lblDetail" class="col-sm-2 control-label">Detail Description(*):  </label>
-							<div class="col-sm-10">
-							      <textarea type="text" name="txtDetail" id="txtDetail" class="form-control" style="height: 150px" row="4" value=""></textarea>
-							</div>
-                </div>
 
 				<div class="form-group">   
                     <label for="" class="col-sm-2 control-label">Branch(*):  </label>
@@ -202,6 +195,14 @@
 							      <?php bind_Branch_List($conn); ?>
 							</div>
                 </div>  
+                            
+                <div class="form-group">   
+                    <label for="lblDetail" class="col-sm-2 control-label">Detail Description(*):  </label>
+							<div class="col-sm-10">
+							      <textarea type="text" name="txtDetail" id="txtDetail" class="form-control" style="height: 150px" row="4" value=""></textarea>
+							</div>
+                </div>
+
                             
             	<div class="form-group">  
                     <label for="lblQty" class="col-sm-2 control-label">Quantity(*):  </label>
