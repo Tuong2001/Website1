@@ -95,7 +95,6 @@
                         <table>
                             <thead>
                                 <tr>
-                                <th class="shoping__product">Store Branch</th>
                                     <th class="shoping__product">Products</th>
                                     <th class="shoping__product">Category</th>
                                     
@@ -134,11 +133,11 @@
                             <?php //
                                  if(isset($_GET['id'])){
                                     $id=$_GET['id'];
-                                    $result = pg_query($conn,"SELECT product.smalldesc, product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name 
+                                    $result = pg_query($conn,"SELECT product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name 
                                     from product, category where product.cat_id = category.cat_id and '$id'=category.cat_id ");
             
                                 }else{
-                                $result = pg_query($conn,"SELECT product.smalldesc, product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name 
+                                $result = pg_query($conn,"SELECT product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name 
                                     from product, category where product.cat_id = category.cat_id ");
                                 }
                                 while($row=pg_fetch_array($result, NULL, PGSQL_ASSOC)) { 
@@ -147,10 +146,6 @@
 
 
                                 <tr>
-                                <td class="shoping__cart__item">
-                                        
-                                        <h5><?php echo $row["smalldesc"]; ?></h5>
-                                    </td>
                                     <td class="shoping__cart__item" style="width: 1000px">
                                         <img src="img/<?php echo $row['pro_image'] ?>" alt="">
                                         <h5><?php echo $row["product_name"]; ?></h5>

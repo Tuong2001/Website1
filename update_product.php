@@ -137,9 +137,9 @@
                  </div>   
                             
                 <div class="form-group">   
-                    <label for="lblShort" class="col-sm-5 control-label">Store Branch(*):  </label>
+                    <label for="lblShort" class="col-sm-5 control-label">Short description(*):  </label>
 							<div class="col-sm-10">
-							      <input type="text" name="txtShort" id="txtShort" class="form-control" placeholder="Branch" value="<?php echo $short?>"/>
+							      <input type="text" name="txtShort" id="txtShort" class="form-control" placeholder="Short description" value="<?php echo $short?>"/>
 							</div>
                 </div>
                             
