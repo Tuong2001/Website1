@@ -87,10 +87,29 @@
 			}
 		echo "</select>";
 	}
+	function bind_Branch_List($conn, $selectedValue)
+	{
+		$sqlString = "SELECT branch_id, branch_name from branch";
+		$result = pg_query($conn, $sqlString);
+echo "<SELECT name ='BranchList' class='from-control'>
+			<option value='0'>Choose Branch</option>";
+			while ($row=pg_fetch_array($result,NULL, PGSQL_ASSOC))
+			{
+				if($row['branch_name']==$selectedValue)
+				{
+					echo "<option value ='".$row['branch_id']."' selected>".$row['branch_name']."</option>";
+				}
+				else
+				{
+					echo "<option value='".$row['branch_id']."'>".$row['branch_name']."</option>";
+				}
+			}
+		echo "</select>";
+	}
 	if(isset($_GET['id']))
 	{
 		$id = $_GET['id'];
-		$sqlString = "SELECT product_name, price, smalldesc, detaildesc, prodate, pro_qty, pro_image, cat_id from product where product_id='$id'";
+		$sqlString = "SELECT product_name, price, smalldesc, detaildesc, prodate, pro_qty, pro_image, cat_id, branch_name from product where product_id='$id'";
 
 		$result = pg_query($conn, $sqlString);
 		$row = pg_fetch_array($result, NULL, PGSQL_ASSOC);
@@ -98,6 +117,7 @@
 		$proname = $row['product_name'];
 		$short = $row['smalldesc'];
 		$detail = $row['detaildesc'];
+		$branch = $row['branch'];
 		$price = $row['price'];
 		$qty = $row['pro_qty'];
 		$pic = $row['pro_image'];
@@ -140,6 +160,14 @@
                     <label for="lblShort" class="col-sm-5 control-label">Short description(*):  </label>
 							<div class="col-sm-10">
 							      <input type="text" name="txtShort" id="txtShort" class="form-control" placeholder="Short description" value="<?php echo $short?>"/>
+							</div>
+                </div>
+
+				<div class="form-group">   
+                    <label for="" class="col-sm-5 control-label">Branch(*):  </label>
+							<div class="col-sm-10">
+								<?php bind_Branch_List($conn, $branch); ?>
+							      
 							</div>
                 </div>
                             
