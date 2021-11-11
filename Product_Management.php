@@ -95,7 +95,7 @@
                         <table>
                             <thead>
                                 <tr>
-                                <th class="shoping__product">Branch</th>
+                                <th class="shoping__product">Store Branch</th>
                                     <th class="shoping__product">Products</th>
                                     <th class="shoping__product">Category</th>
                                     
