@@ -95,6 +95,7 @@
                         <table>
                             <thead>
                                 <tr>
+                                <th class="shoping__product">Branch</th>
                                     <th class="shoping__product">Products</th>
                                     <th class="shoping__product">Category</th>
                                     
@@ -146,6 +147,10 @@
 
 
                                 <tr>
+                                <td class="shoping__cart__item">
+                                        
+                                        <h5><?php echo $row["smalldesc"]; ?></h5>
+                                    </td>
                                     <td class="shoping__cart__item" style="width: 1000px">
                                         <img src="img/<?php echo $row['pro_image'] ?>" alt="">
                                         <h5><?php echo $row["product_name"]; ?></h5>
