@@ -213,6 +213,7 @@ echo "<SELECT name ='BranchList' class='from-control'>
 		$qty = $_POST['txtQty'];
 		$pic = $_FILES['txtImage'];
 		$cat = $_POST['CategoryList'];
+		$branchlist=$_POST['BranchList'];
 		
 		$err = "";
 
