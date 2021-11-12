@@ -97,6 +97,7 @@
                                 <tr>
                                     <th class="shoping__product">Products</th>
                                     <th class="shoping__product">Category</th>
+                                    <th class="shoping__product">Branch</th>
                                     
                                     
                                     <th>Price</th>
@@ -133,12 +134,12 @@
                             <?php //
                                  if(isset($_GET['id'])){
                                     $id=$_GET['id'];
-                                    $result = pg_query($conn,"SELECT product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name 
-                                    from product, category where product.cat_id = category.cat_id and '$id'=category.cat_id ");
+                                    $result = pg_query($conn,"SELECT product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name, branch.branch_name 
+                                    from product, category where product.cat_id = category.cat_id and product.branch_id = branch.branch_id '$id'=category.cat_id ");
             
                                 }else{
-                                $result = pg_query($conn,"SELECT product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name 
-                                    from product, category where product.cat_id = category.cat_id ");
+                                $result = pg_query($conn,"SELECT product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name, branch.branch_name 
+                                    from product, category where product.cat_id = category.cat_id and product.branch_id = branch.branch_id");
                                 }
                                 while($row=pg_fetch_array($result, NULL, PGSQL_ASSOC)) { 
                                     ?>
@@ -153,6 +154,10 @@
                                     <td class="shoping__cart__item">
                                         
                                         <h5><?php echo $row["cat_name"]; ?></h5>
+                                    </td>
+                                    <td class="shoping__cart__item">
+                                        
+                                        <h5><?php echo $row["branch_name"]; ?></h5>
                                     </td>
                                     <td class="shoping__cart__price">
                                         $<?php echo $row["price"]; ?>
